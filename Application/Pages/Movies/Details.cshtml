@@ -1,0 +1,32 @@
+﻿@page
+@model Application.Pages.Movies.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h5>Detalhes</h5>
+
+<table class="table rounded">
+    <thead>
+        <tr>
+            <th><label class="form-label" asp-for="Movie.Title"></label></th>
+            <th><label class="form-label" asp-for="Movie.ReleaseDate"></label></th>
+            <th><label class="form-label" asp-for="Movie.Genre"></label></th>
+            <th><label class="form-label" asp-for="Movie.Price"></label></th>           
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><input disabled asp-for="Movie.Title" class="form-control" /></td>
+            <td><input disabled asp-for="Movie.ReleaseDate" class="form-control" /></td>
+            <td><input disabled asp-for="Movie.Genre" class="form-control" /></td>
+            <td> <input disabled asp-for="Movie.Price" class="form-control" /></td>
+        </tr>        
+    </tbody>
+</table>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Movie?.Id" class="btn btn-outline-secondary">Editar</a>
+    <a asp-page="./Index" class="btn btn-outline-dark">Retornar à lista de filmes</a>
+</div>

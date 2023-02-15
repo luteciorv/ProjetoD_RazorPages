@@ -1,0 +1,39 @@
+﻿@page
+@model Application.Pages.Movies.IndexModel
+
+@{
+    ViewData["Title"] = "Filmes";
+}
+
+<h5>Filmes</h5>
+
+<p>
+    <a asp-page="Create" class="btn btn-outline-primary">Cadastrar novo filme</a>
+</p>
+<table class="table table-hover rounded mt-2">
+    <thead>
+        <tr class="text-center">
+            <th><label class="form-label" asp-for="Movie[0].Title"></label></th>
+            <th><label class="form-label" asp-for="Movie[0].ReleaseDate"></label></th>
+            <th><label class="form-label" asp-for="Movie[0].Genre"></label></th>
+            <th><label class="form-label" asp-for="Movie[0].Price"></label></th>
+            <th><label class="forn-label">Ações</label></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Movie)
+        {
+            <tr class="text-center">
+                <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                <td>@Html.DisplayFor(modelItem => item.ReleaseDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.Genre)</td>
+                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                <td class="d-flex justify-content-between">
+                    <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-outline-secondary">Editar</a>
+                    <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-outline-info">Detalhes</a>
+                    <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">Apagar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

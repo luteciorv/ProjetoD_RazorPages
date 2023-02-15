@@ -10,18 +10,39 @@
 <p>
     <a asp-page="Create" class="btn btn-outline-primary">Cadastrar novo filme</a>
 </p>
+
+<form method="get">
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Título</label>
+            <input type="text" class="form-control" asp-for="MovieTitle" />
+        </div>        
+
+        <div class="col">
+            <label class="form-label">Gênero</label>
+            <select asp-for="MovieGenre" asp-items="Model.Genres" class="form-select">
+                <option value="">Todos</option>
+            </select>
+        </div>
+
+        <div class="col-md-12 mt-3">
+            <input type="submit" value="Pesquisar" class="btn btn-outline-success" />
+        </div>        
+    </div>
+</form>
+
 <table class="table table-hover rounded mt-2">
     <thead>
         <tr class="text-center">
-            <th><label class="form-label" asp-for="Movie[0].Title"></label></th>
-            <th><label class="form-label" asp-for="Movie[0].ReleaseDate"></label></th>
-            <th><label class="form-label" asp-for="Movie[0].Genre"></label></th>
-            <th><label class="form-label" asp-for="Movie[0].Price"></label></th>
-            <th><label class="forn-label">Ações</label></th>
+            <th><label class="form-label" asp-for="Movies[0].Title"></label></th>
+            <th><label class="form-label" asp-for="Movies[0].ReleaseDate"></label></th>
+            <th><label class="form-label" asp-for="Movies[0].Genre"></label></th>
+            <th><label class="form-label" asp-for="Movies[0].Price"></label></th>
+            <th><label class="form-label">Ações</label></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Movie)
+        @foreach (var item in Model.Movies)
         {
             <tr class="text-center">
                 <td>@Html.DisplayFor(modelItem => item.Title)</td>

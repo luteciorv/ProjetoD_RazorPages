@@ -20,3 +20,8 @@
 ### v01.03
         * Adição de DataAnnotations no modelo "Movie";
         * Alteração nas rotas de Editar, Apagar e Detalhes;
+
+### v01.04
+        * Implementação dos filtros de busca dos filmes;
+        * Filtro de título;
+        * Filtro de gênero;        

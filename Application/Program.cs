@@ -10,6 +10,13 @@ builder.Services.AddDbContext<Context>(options =>
 
 var app = builder.Build();
 
+// Configurar o Seed do banco de dados
+using(var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    SeedDatabase.Initialize(services);
+}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

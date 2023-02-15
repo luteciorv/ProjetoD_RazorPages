@@ -13,3 +13,6 @@
         * Substituição de trechos por tags-helpers no CRUD de "Movie";
         * Alteração no nome da tabela "Movie" para "Movies";
         * Adaptação do JQuery-Validation para contemplar a moeda brasileira;
+
+### v01.02
+        * Implementação do método Seed para popular a tabela "Movies";

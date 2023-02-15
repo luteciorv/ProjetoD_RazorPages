@@ -3,7 +3,8 @@
 ### Descrição
         * Projeto seguindo a orientação da documentação oficial da Microsoft;
         * Criação de um CRUD de Filmes utilizando Razor Pages;
-
+        * Entity Framework Core para manuseio/versionamento de dados;
+        
 ### v01.00
         * Criação do projeto;
 
@@ -34,3 +35,19 @@
 ### v01.06
         * Adição de validações no modelo "Movie";
         * Atualização do modelo do banco com o Migration;
+
+### Telas        
+        * Tela Inicial
+![](Telas/Tela_Principal.PNG?raw=true)
+
+        * Tela de cadastro
+![](Telas/Cadastro.PNG?raw=true)
+
+        * Tela de edição
+![](Telas/Edicao.PNG?raw=true)
+
+        * Tela de detalhes
+![](Telas/Detalhes.PNG?raw=true)
+
+        * Tela de deleção
+![](Telas/Excluir.PNG?raw=true)

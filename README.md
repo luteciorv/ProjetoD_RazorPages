@@ -30,3 +30,7 @@
         * Adição da coluna "Rating" na tabela "Movies";
         * Utilização do EF Core (Migration) para atualizar o banco;   
         * Modificação nas telas do CRUD para inserir o novo campo;
+
+### v01.06
+        * Adição de validações no modelo "Movie";
+        * Atualização do modelo do banco com o Migration;

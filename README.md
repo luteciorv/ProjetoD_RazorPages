@@ -16,3 +16,7 @@
 
 ### v01.02
         * Implementação do método Seed para popular a tabela "Movies";
+
+### v01.03
+        * Adição de DataAnnotations no modelo "Movie";
+        * Alteração nas rotas de Editar, Apagar e Detalhes;

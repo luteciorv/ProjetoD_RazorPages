@@ -38,6 +38,7 @@
             <th><label class="form-label" asp-for="Movies[0].ReleaseDate"></label></th>
             <th><label class="form-label" asp-for="Movies[0].Genre"></label></th>
             <th><label class="form-label" asp-for="Movies[0].Price"></label></th>
+            <th><label class="form-label" asp-for="Movies[0].Rating"></label></th>
             <th><label class="form-label">Ações</label></th>
         </tr>
     </thead>
@@ -49,6 +50,7 @@
                 <td>@Html.DisplayFor(modelItem => item.ReleaseDate)</td>
                 <td>@Html.DisplayFor(modelItem => item.Genre)</td>
                 <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                <td>@Html.DisplayFor(modelItem => item.Rating)</td>
                 <td class="d-flex justify-content-between">
                     <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-outline-secondary">Editar</a>
                     <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-outline-info">Detalhes</a>

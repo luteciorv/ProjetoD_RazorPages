@@ -22,5 +22,8 @@ namespace Application.Models
         [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
+
+        [DisplayName("Avaliação")]
+        public string Rating { get; set; } = string.Empty;
     }
 }

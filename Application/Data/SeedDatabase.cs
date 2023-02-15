@@ -22,7 +22,8 @@ namespace Application.Data
                         Title = "Quando Herry conheceu Silly",
                         ReleaseDate = DateTime.Parse("12/02/1989"),
                         Genre = "Comédia romântica",
-                        Price = 17.99M
+                        Price = 17.99M,
+                        Rating = "S+"
                     },
 
                     new Movie
@@ -30,7 +31,8 @@ namespace Application.Data
                         Title = "Os caças-fantasmas ",
                         ReleaseDate = DateTime.Parse("13/03/1984"),
                         Genre = "Comédia",
-                        Price = 18.99M
+                        Price = 18.99M,
+                        Rating = "B+"
                     },
 
                     new Movie
@@ -38,7 +40,8 @@ namespace Application.Data
                         Title = "Os caças-fantasmas 2",
                         ReleaseDate = DateTime.Parse("23/02/1986"),
                         Genre = "Comédia",
-                        Price = 19.99M
+                        Price = 19.99M,
+                        Rating = "A-"
                     },
 
                     new Movie
@@ -46,7 +49,8 @@ namespace Application.Data
                         Title = "Rio Bravo",
                         ReleaseDate = DateTime.Parse("15/04/1959"),
                         Genre = "Velho Oeste",
-                        Price = 13.99M
+                        Price = 13.99M,
+                        Rating = "A+"
                     }
                 );
 

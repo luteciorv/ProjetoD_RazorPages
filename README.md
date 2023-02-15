@@ -24,4 +24,9 @@
 ### v01.04
         * Implementação dos filtros de busca dos filmes;
         * Filtro de título;
-        * Filtro de gênero;        
+        * Filtro de gênero;      
+
+### v01.05
+        * Adição da coluna "Rating" na tabela "Movies";
+        * Utilização do EF Core (Migration) para atualizar o banco;   
+        * Modificação nas telas do CRUD para inserir o novo campo;
